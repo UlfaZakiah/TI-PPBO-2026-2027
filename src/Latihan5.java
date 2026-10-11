@@ -16,7 +16,6 @@ public class Latihan5 {
 
         // 1. Hitung rata-rata
         double rataRata = (double) hitungTotal(data) / data.length;
-
         // 2. Hitung jumlah elemen yang di atas rata-rata
         int count = 0;
         for (int nilai : data) {
@@ -30,10 +29,8 @@ public class Latihan5 {
         int index = 0;
         for (int nilai : data) {
             if (nilai > rataRata) {
-                hasil[index++] = nilai;
-            }
+                hasil[index++] = nilai; }
         }
-
         return hasil;
     }
 

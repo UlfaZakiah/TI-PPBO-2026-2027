@@ -1,31 +1,24 @@
 public class MethodArrayDemo {
     static double hitungRataRata ( int [] data ) {
          int total = 0;
-         for ( int nilai : data ) {
-             total += nilai ;
-         }
+         for ( int nilai : data ) { total += nilai ; }
          return ( double ) total / data . length ;
     }
-
     static int cariMaksimum ( int [] data ) {
          int max = data [ 0];
          for ( int nilai : data ) {
-             if ( nilai > max) {
-                 max = nilai ;
-             }
+             if ( nilai > max) { max = nilai ; }
          }
          return max;
     }
-
     static int [] urutkanAscending ( int [] data ) {
-        int [] hasil = data . clone (); // salin dulu agar array asli tidak berubah
+        int [] hasil = data . clone (); // salindulu agar array asli tidakberubah
         for ( int i = 0; i < hasil . length - 1; i ++) {
              for ( int j = 0; j < hasil . length - 1 - i ; j ++) {
                  if ( hasil [ j ] > hasil [ j + 1]) {
                      int temp = hasil [ j ];
                      hasil [ j ] = hasil [ j + 1];
-                     hasil [ j + 1] = temp ;
-                 }
+                     hasil [ j + 1] = temp ;   }
              }
         }
         return hasil ;

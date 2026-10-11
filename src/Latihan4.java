@@ -22,7 +22,6 @@ public class Latihan4 {
         }
         return max;
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -36,11 +35,9 @@ public class Latihan4 {
             System.out.print("Nilai ke-" + (i + 1) + ": ");
             dataUjian[i] = scanner.nextInt();
         }
-
         System.out.println("\n--- Hasil ---");
         System.out.println("Nilai Minimum  : " + cariNilaiMinimum(dataUjian));
         System.out.println("Nilai Maksimum : " + cariNilaiMaksimum(dataUjian));
-
         scanner.close();
     }
 }
