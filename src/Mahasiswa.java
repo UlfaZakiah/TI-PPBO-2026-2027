@@ -17,12 +17,13 @@ public class Mahasiswa {
         this.ipk = ipk;
     }
 
-    public static void main(String[] args) {
-        // Objek dan perintah cetak dipindahkan ke dalam metode main
-        Mahasiswa m1 = new Mahasiswa(); // constructor default
-        Mahasiswa m2 = new Mahasiswa("Siti", "67890", 3.90); // berparameter
+    public void tampilkanData() {
+        System.out.println("Nama: " + nama);
+        System.out.println("NIM : " + nim);
+        System.out.println("IPK : " + ipk);
+    }
 
-        System.out.println(m1.nama + " - " + m1.ipk);
-        System.out.println(m2.nama + " - " + m2.ipk);
+    public boolean isCumlaude() {
+        return ipk >= 3.5;
     }
 }
